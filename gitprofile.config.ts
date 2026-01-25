@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'AntoineKelleni', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -12,9 +12,9 @@ const CONFIG = {
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      display: false, // Display GitHub projects?
+      header: 'Dépôts GitHub (code)',
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
@@ -25,82 +25,151 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [
+        'AntoineKelleni/Data-Entrainement-SQL-et-creation-BDD',
+        'AntoineKelleni/Mettre-en-place-un-pipeline-d-orchestration-des-flux',
+      ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Projets GitHub (code)',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Création et automatisation d’une infrastructure de données',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'L’objectif est d’analyser les pratiques sportives des employés d’une entreprise, afin de calculer des avantages sociaux liés au sport (primes sportives, jours wellness, indicateurs RH)',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://raw.githubusercontent.com/AntoineKelleni/creation_et_automatisation_infrastructure_donnes/refs/heads/main/docs/images/Diagramme.png',
+          link: 'https://github.com/AntoineKelleni/creation_et_automatisation_infrastructure_donnes',
         },
         {
-          title: 'Project Name',
+          title: 'Conception et deploiement d’un système RAG',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Développement d’un système RAG (Retrieval-Augmented Generation) pour améliorer les réponses des modèles de langage en intégrant des données externes.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://raw.githubusercontent.com/AntoineKelleni/concevoir_et_deployer-_un_systeme_RAG/main/schéma_architecture_pipeline_RAG.png',
+          link: 'https://github.com/AntoineKelleni/concevoir_et_deployer-_un_systeme_RAG',
         },
+
+        {
+          title: 'Système IA du POC au MVP',
+          description:
+            'Guide complet pour développer un système d\'IA évolutif, de la preuve de concept (POC) au produit minimum viable (MVP).',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/Passez_un_systeme_IA_du_POC_au_MVP/main/img/architecture%20MVP.png',
+          link: 'https://github.com/AntoineKelleni/Passez_un_systeme_IA_du_POC_au_MVP',
+        },
+        {
+          title: 'Construire et tester une infrastructure de données sur le cloud',
+          description:
+            'Automatiser la collecte, transformation, stockage et analyse des données pour simplifier la prise de décision.',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/Construire_et_tester_une_infrastructure_de_donnees_airbyte_mongodb_docker_aws/refs/heads/main/Screenshoot%20-/sch%C3%A9ma_architecture_pipeline_infra.png',
+          link: 'https://github.com/AntoineKelleni/Construire_et_tester_une_infrastructure_de_donnees_airbyte_mongodb_docker_aws',
+        },
+        {
+          title: 'Creation BDD NoSQL',
+          description:
+            'concevoir un modèle de données NoSQL, charger des jeux de données dans une base MongoDB, puis réaliser des analyses à l’aide de requêtes (mongosh) et d’un notebook Python (PyMongo + Polars).',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/Concevez-et-analysez-une-base-de-donnees-NoSQL_mongoDB_PyMongo-polar_PowerBI_ReplicatSet_Sharding/refs/heads/main/screenshot/visuel_portfolio.png',
+          link: 'https://github.com/AntoineKelleni/Concevez-et-analysez-une-base-de-donnees-NoSQL_mongoDB_PyMongo-polar_PowerBI_ReplicatSet_Sharding',
+        },
+        {
+          title: 'Creation BDD et entrainement SQL',
+          description:
+            'Le projet vise à collecter, modéliser, analyser et valoriser les données de transactions immobilières afin de répondre aux besoins stratégiques et opérationnels de l’entreprise.',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/Data-Entrainement-SQL-et-creation-BDD/refs/heads/main/visuel_projet.png',
+          link: 'https://github.com/AntoineKelleni/Data-Entrainement-SQL-et-creation-BDD',
+        },
+        {
+          title: 'Pipeline d’orchestration des flux de données',
+          description:
+            'Mise en place d’un pipeline data automatisé avec ingestion, transformations et orchestration.',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/Mettre-en-place-un-pipeline-d-orchestration-des-flux/main/screenshoot_diagram.png',
+          link: 'https://github.com/AntoineKelleni/Mettre-en-place-un-pipeline-d-orchestration-des-flux',
+        },
+        {
+          title: 'Auditez un environnement de donées d’un supermarche',
+          description:
+            'Audit complet d’un environnement de données pour un supermarché, incluant l’analyse des flux de données, la qualité des données et les recommandations d’amélioration.',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/Auditez-un-environnement-de-donnees-d-un-supermarche/main/diagram_relationel.png',
+          link: 'https://github.com/AntoineKelleni/Auditez-un-environnement-de-donnees-d-un-supermarche',
+        },
+        {
+          title: 'Analyser les abonnés du journal ParisMatch',
+          description:
+            'Analyse des données des abonnés du journal ParisMatch pour identifier les tendances et comportements d’achat.',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/Exercice_Alternance_Data_analyst_ParisMatch/refs/heads/main/paris_match_Looker_studio_dashboard.png?token=GHSAT0AAAAAADEYHDO5RCMVNJXWPWPGUT7M2LTRZ6A',
+          link: 'https://github.com/AntoineKelleni/Exercice_Alternance_Data_analyst_ParisMatch',
+        },
+        {
+          title: 'World Population Dashboard - Looker Studio Dashboard',
+          description:
+            ' Croissance démographique par pays (1970-2022). Graphiques interactifs avec filtres par région et année. Indicateurs clés : densité, pourcentage mondial.',
+          imageUrl:
+            'https://raw.githubusercontent.com/AntoineKelleni/World-Population-Data-Analysis/refs/heads/main/population_mondiale_analysis.png',
+          link: 'https://github.com/AntoineKelleni/World-Population-Data-Analysis',
+        },
+
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { title: 'Portfolio of Antoine Kelleni', description: '', imageURL: '' },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    discord: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: '',
+    linkedin: 'www.linkedin.com/in/antoine-kelleni/',
+    website: 'https://antoinekelleni.github.io/',
+    phone: '+33 7 60 31 87 72',
+    email: 'antoinekelleni@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://antoinekelleni.github.io/CV/Antoine_KELLENI_CV.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
-  skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
-  ],
+skills: [
+  'Python',
+  'SQL',
+  'Linux',
+  'Git',
+  'Shell / Bash',
+  'Docker',
+  'Microsoft Azure',
+  'AWS',
+  'Google Cloud Platform',
+  'Apache Airflow',
+  'ETL / ELT',
+  'Apache Spark',
+  'Hadoop',
+  'Power BI',
+  'Tableau',
+  'Jupyter Notebooks',
+  'MapReduce',
+  'Airbyte',
+  'Redpanda',
+  'PostgreSQL',
+  'MongoDB',
+  'Elasticsearch',
+  'Vector Databases',
+  'FAISS',
+  'NLP',
+  'RAG (Retrieval-Augmented Generation)',
+  'LangChain',
+  'Data Engineering',
+  'Data Pipelines',
+],
+
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'NANOTERA',
+      position: 'Digital Traffic Manager ',
+      from: '09/2022',
+      to: '08/2023',
+      companyLink: 'https://nanotera.eu/',
     },
     {
       company: 'Company Name',
@@ -110,28 +179,50 @@ const CONFIG = {
       companyLink: 'https://example.com',
     },
   ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
+  
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'OpenClassrooms',
+      degree: 'Mastère Data Engineer',
+      from: '2025',
+      to: '2026',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'HETIC',
+      degree: 'Mastère Data & IA',
+      from: '2023',
+      to: '2025',
+    },
+    {
+      institution: 'IIM Digital School',
+      degree: 'Bachelor Marketing & Communication digitale',
+      from: '2021',
+      to: '2023',
+    },
+    {
+      institution: 'SUPINFO',
+      degree: '1er année cycle ingénieur informatique',
+      from: '2017',
+      to: '2018',
     },
   ],
+  
+ certifications: [
+    {
+      name: ' Google Ads sur le Réseau de Recherche',
+      year: 'Mai 2023',
+    },
+        {
+      name: ' Les bases de Google Ads',
+      year: 'Mars  2018',
+    },
+        {
+      name: ' Google Analytics Individual Qualification',
+      year: 'Nov 2017',
+    },
+  ], 
+  
+/**
   publications: [
     {
       title: 'Publication Title',
@@ -152,12 +243,16 @@ const CONFIG = {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     },
   ],
+ */
+
+  /** 
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
     username: 'arifszn', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
+  */
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -218,7 +313,7 @@ const CONFIG = {
     ],
   },
 
-  // Optional Footer. Supports plain text or HTML.
+  //** */ Optional Footer. Supports plain text or HTML.
   footer: `Made with <a 
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
