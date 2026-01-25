@@ -98,8 +98,8 @@ const ExternalProjectCard = ({
                     {item.title}
                   </h2>
                   {item.imageUrl && (
-                    <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
+                    <div className="w-full mb-4">
+                      <div className="w-full h-56 rounded-xl overflow-hidden bg-base-200">
                         <LazyImage
                           src={item.imageUrl}
                           alt={'thumbnail'}
@@ -108,6 +108,7 @@ const ExternalProjectCard = ({
                             heightCls: 'h-full',
                             shape: '',
                           })}
+                          className="w-full h-full object-contain"
                         />
                       </div>
                     </div>
@@ -151,7 +152,7 @@ const ExternalProjectCard = ({
                   <div className="text-base-content/60 text-xs sm:text-sm mt-1 truncate">
                     {loading
                       ? skeleton({ widthCls: 'w-32', heightCls: 'h-4' })
-                      : `Showcasing ${externalProjects.length} projects`}
+                      : `Présentations ${externalProjects.length} projets`}
                   </div>
                 </div>
               </div>
