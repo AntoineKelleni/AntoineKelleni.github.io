@@ -172,11 +172,18 @@ skills: [
       companyLink: 'https://nanotera.eu/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'MonPetitTrésor',
+      position: 'Assistant Web Marketing',
+      from: '07/2018',
+      to: '08/2018',
+      companyLink: 'https://mon-petit-tresor.com/',
+    },
+    {
+      company: 'Whynot Trading',
+      position: 'Assistant Web Marketing',
+      from: '06/2018',
+      to: '08/2018',
+      companyLink: 'https://whynot-trading.com/fr/',
     },
   ],
   

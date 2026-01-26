@@ -145,7 +145,7 @@ const PublicationCard = ({
                   <div className="text-base-content/60 text-xs sm:text-sm mt-1 truncate">
                     {loading
                       ? skeleton({ widthCls: 'w-32', heightCls: 'h-4' })
-                      : `Showcasing ${publications.length} publications`}
+                      : `Présentations ${publications.length} projets`}
                   </div>
                 </div>
               </div>
