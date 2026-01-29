@@ -105,7 +105,7 @@ const CONFIG = {
           description:
             'Analyse des données des abonnés du journal ParisMatch pour identifier les tendances et comportements d’achat.',
           imageUrl:
-            'https://raw.githubusercontent.com/AntoineKelleni/Exercice_Alternance_Data_analyst_ParisMatch/refs/heads/main/paris_match_Looker_studio_dashboard.png?token=GHSAT0AAAAAADEYHDO47MC2PXEBUMQSFSFS2LXNPDA',
+            'https://raw.githubusercontent.com/AntoineKelleni/Exercice_Alternance_Data_analyst_ParisMatch/refs/heads/main/paris_match_Looker_studio_dashboard.png',
           link: 'https://github.com/AntoineKelleni/Exercice_Alternance_Data_analyst_ParisMatch',
         },
         {
